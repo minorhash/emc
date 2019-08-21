@@ -1,0 +1,140 @@
+.ex2{
+    position:relative;
+    }
+
+.ex2 span {
+    position:absolute;  
+    top:50%;
+    left:20%;
+    margin:0;
+    color:white;
+    background:skyblue;
+    line-height:1;
+    padding:5px 10px;
+    font-size:5em; 
+    font-weight:bold;
+    font-family:Quicksand,sans-serif;
+    -ms-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+       
+}
+
+
+.ex2 img{
+    width:100%;
+}
+
+
+/*背景つき画像の上文字 */
+
+.ex3{
+    width:100%;
+    padding:1em 1em;
+    background:#c49a6a;
+    color:#FFF;
+
+}
+
+.ex3 p {
+    margin:1em;
+    padding:0;
+    text-align:center;
+    font-size:20px; 
+    }
+
+
+.ex4{
+   }
+
+.ex4 p {
+    text-align:center; 
+    margin:1em;
+    padding:0;
+    font-size:20px;
+    color:#33ccff; 
+    }
+
+.ex5 {
+    margin:2em 0;
+    background:#f1f1f1;
+    box-shadow:0 2px 4px rgba(0,0,0,0.22);
+}
+
+.ex5 .box-title{
+    font-size:1.2em;
+    background:#5fc2f5;
+    padding:4px;
+    text-align:center;
+    color:#FFF;
+    font-weight:bold;
+    letter-spacing:0.05em;
+}
+
+.ex5 p {
+    padding:15px 20px;
+    margin:0;
+
+}
+
+
+.ex6 {
+    padding:1.5em 1.5em 2em 1em;
+    background:#82cddd;
+    color:#FFF;
+
+}
+
+.ex6 p {
+    margin:0.5em;
+    padding:0;
+    text-align:center;
+    font-size:30px; 
+}
+
+
+
+
+.ex8 {
+    text-align:center;
+    margin:10px;
+   
+}
+
+
+/*pageスクロール*/
+
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+ 
+
+#pageTop i {
+  padding-top: 6px
+}
+
+ 
+
+#pageTop a {
+  display: block;
+  z-index: 999;
+  padding: 8px 8px 0 8px;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  background-color: #f19ca7;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+ 
+
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}

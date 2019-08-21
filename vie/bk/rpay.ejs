@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<% include par/head%>
+<% include nav/nav%>
+
+<body>
+
+<!-- menu -->
+
+<section class="section">
+<div class="row">
+<div class="col-lg-3">
+
+</div>
+
+<div class="col-lg-9"> 
+<% if(usr){ %>
+
+<% if(sar){ %>
+<% for (var i=0;i<sar.length;i++){%>
+<p class="p-10 bg-ali">
+<%=shop.tit%>:
+<%= sar[i].name%><br>
+<%=shop.sku%>:
+<%= sar[i].sku%><br>
+<%=shop.pri%>:
+<%= sar[i].pri.toLocaleString()%>&nbsp;<%=shop.yen%><br>
+</p><br>
+
+<% } %><!-- sar-->
+
+
+<% include aid/rpy%>
+<% } else { %>
+<% include log/in%>
+<% } %>
+</div><!-- col-->
+
+<div class="col"></div><!-- col-->
+</div><!-- row-->
+
+</section><!-- sec-->
+
+</body>
+
+</html>
+

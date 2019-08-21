@@ -1,0 +1,10 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+ .dropdown-backdrop{
+     position:static;
+     z-index:0;
+ }
+
+.navbar-light .navbar-nav .nav-link{ color:white; }

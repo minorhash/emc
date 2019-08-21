@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<% include par/head%>
+<% include nav/nav%>
+    <%include nav/mod%>
+    <%include nav/sig%>
+
+<body>
+
+<!-- menu -->
+
+<section class="section">
+<div class="row">
+<div class="col-lg-2 bg-ali"></div>
+
+<div class="col-lg-8 bg-bei"> 
+<% if(usr){ %>
+
+<% include pay/suc%>
+
+<% } else { %>
+<script src=js/red.js></script>
+<% } %>
+</div><!-- /col-->
+
+<div class="col-lg-2 bg-ali"></div>
+</div><!-- /row-->
+
+</section><!-- sec-->
+
+</body>
+
+</html>
+

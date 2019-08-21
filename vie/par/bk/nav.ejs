@@ -1,0 +1,18 @@
+<nav class="navbar">
+
+<a class="nav-item" href="/">Home <span class="sr-only">(current)</span></a>
+<% for (var i=0;i<typ.length;i++) { %>
+<a class="nav-item" href="type-<%= typ[i].typ %>">
+<% if(typ[i].typ=="sch") { %>
+スクール
+<% } else if (typ[i].typ=="str"){ %>
+配信
+<% } else { %>
+<%= typ[i].typ %>
+        <% } %>
+    </a>
+<% } %>
+    
+<a class="nav-item" href="chat">chat</a>
+
+</nav>

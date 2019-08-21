@@ -1,0 +1,16 @@
+
+<section class="card">
+
+<div class="card-content">
+    <%if(mer){%>
+<p class="btn btn-ali">
+    <%=shop.sub%>:<%= mer.pri.toLocaleString()%> &nbsp;<%=shop.yen%>
+</p><br>
+    <% var tax=Math.round(mer.pri*.08) %>
+    <%=shop.tax%>:<%= tax%>&nbsp;<%=shop.yen%><br>
+
+<p class="btn btn-info"><%=shop.sum%>:<%= (mer.pri+tax).toLocaleString()%>&nbsp;<%=shop.yen%></p>
+<%}%>
+</div>
+
+</section>

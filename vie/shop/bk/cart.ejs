@@ -1,0 +1,35 @@
+<div class="row">
+
+<% for(var i=0;i<sar.length;i++) { %>
+
+<article class="media">
+
+<% if(sar) {%>
+<figure class="media-left">
+<img src="img/jpg/<%= sar[i].sku %>.jpg">
+</figure>
+
+<div class="media-content">
+<div class="content">
+<%=sku%>
+&nbsp;&nbsp;&nbsp;<strong><%=shop.tit %>:<%= sar[i].name %></strong> <br>
+&nbsp;&nbsp;&nbsp;<%=shop.sku %>:tms-<%= sar[i].sku%><br>
+
+<% if(sar.pri) {%>
+&nbsp;&nbsp;&nbsp;<%=shop.pri %>:<%= sar[i].pri.toLocaleString()%>
+<% }else{ %>
+no pri
+<% }%>
+&nbsp;&nbsp;&nbsp;<%=shop.yen %>
+<% }else{ %>
+no sar
+<% }%>
+<br><br>
+
+</div>
+ </div>
+ <script src="js/sub.js"></script>
+</article>
+<% } %><!-- for-->
+
+</div><!-- /row-->

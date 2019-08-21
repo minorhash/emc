@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<% include par/head%>
+<% include nav/nav%>
+
+<html>
+<body>
+
+<p class="bg-lg p-2 text-center"><%=shop.cart%></p><br>
+<div class="row">
+<div class="col-lg-1 bg-bei"></div><!-- col1 4-->
+
+<div class="col-lg-6 bg-ali"> 
+
+<br>
+<% if(mer){ %>
+<% include shop/cart %>
+<% include shop/clr%>
+<% } else { %>
+
+<p class="bg-mis p-2"><%=shop.noit%></p>
+<% }  %>
+</div><!-- col3 4-->
+
+
+<div class="col-lg-4 bg-ali">
+<% if(mer){ %>
+
+    <% include shop/sum %>
+    <% include shop/pay%>
+
+<% }else{  %><% }  %>
+</div><!-- col3 4-->
+
+		<div class="col-lg-1 bg-bei"></div><!-- col1 4-->
+</div><!-- row--> 
+
+
+<script src="js/sub.js"></script>
+</body>
+</html>
+

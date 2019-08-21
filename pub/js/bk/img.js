@@ -1,0 +1,4 @@
+$("img")
+.addClass("img-fluid")
+
+

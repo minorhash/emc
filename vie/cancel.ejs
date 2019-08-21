@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<% include par/head%>
+<% include nav/nav%>
+<body>
+
+<!-- menu -->
+
+<div class=row>
+<div class="col-lg-3 ">
+
+</div>
+
+<div class="col-lg-9"> 
+<% if(usr){ %>
+
+<% include pay/can%>
+
+<% } else { %>
+<script src=js/red.js></script>
+<% } %>
+</div><!-- /col-->
+</div><!-- row-->
+
+
+</body>
+
+</html>
+

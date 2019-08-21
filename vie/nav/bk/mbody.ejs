@@ -1,0 +1,30 @@
+<div class="modal-body">
+<% if(usr) { %>
+welcome <%= usr.name %>
+<%} else {%>
+
+<form action="/log-ed" method="post">
+E-mail:<br><input class="input" id="ema" type="email" name="email"  size="15">
+
+<br>
+Password:<br><input class="input" id="pss" type="text" name="pss" value="" size="15">
+<br><br>
+<button type="submit" class="button is-info">
+    <%=iusr.login%>
+</button>
+</form>
+
+<br>
+<%=shop.noac%>
+<br><br>
+
+<form action="/sign-up" method="get">
+<button type="submit" class="button is-danger">
+<%=iusr.sgin%>
+</button>
+</form>
+
+<%} %>
+      </div>
+
+

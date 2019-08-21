@@ -1,0 +1,62 @@
+left
+<% if(mer.length!==0) { %>
+<% row=Math.ceil(mer.length/3) %>
+<% if(row == 1) { %>
+<nav class="row">
+<% for(var k=0;k<mer.length;k++ ) { %>
+<div class="col is-one-4 has-t-cen bkg-ali" >
+<img src="img/cd/jpg/<%= mer[k].sku %>.jpg">
+</div>
+<div class="col">
+    <%=shop.tit %>:<%= mer[k].name %><br>
+    <%=shop.sku %>:<%= mer[k].sku %><br>
+    <%=shop.pri %>:<%= mer[k].pri %><br>
+    <%=shop.des %>:<%= mer[k].des %><br>
+</div>
+
+<% } %><!-- for-->
+</nav>
+<% } else if(row==2 ) { %>
+
+<nav class="row">
+<% for(var k=0;k<3;k++ ) { %>
+<div class="col">
+<img src="img/cd/jpg/<%= mer[k].sku %>.jpg">
+</div>
+<% } %><!-- for-->
+</nav>
+<nav class="row">
+<% for(var k=3;k<6;k++ ) { %>
+<div class="col">
+<img src="img/cd/jpg/<%= mer[k].sku %>.jpg">
+</div>
+<% } %>
+</nav>
+
+<% } else if(row==3 ) { %>
+<nav class="row">
+<% for(var k=0;k<3;k++ ) { %>
+<div class="col">
+<img src="img/cd/jpg/<%= mer[k].sku %>.jpg">
+</div>
+<% } %><!-- for-->
+</nav>
+<nav class="row">
+<% for(var k=3;k<6;k++ ) { %>
+<div class="col">
+<img src="img/cd/jpg/<%= mer[k].sku %>.jpg">
+</div>
+<% } %>
+</nav>
+<nav class="row">
+<% for(var k=6;k<mer.length;k++ ) { %>
+<div class="col">
+<img src="img/cd/jpg/<%= mer[k].sku %>.jpg">
+</div>
+<% } %>
+</nav>
+
+
+<% } %>
+<% } else { %> <%=shop.noit %> <% }  %>
+

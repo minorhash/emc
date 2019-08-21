@@ -1,0 +1,252 @@
+.crs1 {
+ font-family:'M PLUS 1p',sans-serif;
+ font-family:'Noto Sans TC',sans-serif;
+ font-family:'Merriweather Sans',sans-serif;
+ text-align:center;
+ font-size:30px;
+ font-weight:bold; 
+ color:#333333;
+}
+
+.crs2 {
+ font-family:'M PLUS 1p',sans-serif;
+ font-family:'Noto Sans TC',sans-serif;
+ font-family:'Merriweather Sans',sans-serif;
+ text-align:center;
+ font-size:17px;
+ color:#333333;
+}
+
+.lnk1 {
+ color:#33ccff;
+
+} 
+
+
+.crs3 {
+ text-align:center;
+ font-family:'M PLUS 1p',sans-serif;
+ font-family:'Noto Sans TC',sans-serif;
+ font-family:'Merriweather Sans',sans-serif;
+ font-size:28px;
+ font-weight:bold; 
+ color:#ea618e;
+}
+
+
+.crs4 {
+ text-align:left;
+ font-family:'M PLUS 1p',sans-serif;
+ font-family:'Noto Sans TC',sans-serif;
+ font-family:'Merriweather Sans',sans-serif;
+ font-size:23px;
+ font-weight:bold; 
+ color:#0066cc;
+
+}
+
+
+.btn12 {
+    text-align:right;
+    background: transparent;
+    color: #3169d1 !important;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background: -webkit-linear-gradient(180deg, rgba(49,105,209,0.8), rgba(132, 179, 252, 0.8), rgba(205, 200, 252, 0), rgba(205, 200, 252, 0));
+    background: -webkit-linear-gradient(right, rgba(49,105,209,0.8), rgba(132, 179, 252, 0.8), rgba(205, 200, 252, 0), rgba(205, 200, 252, 0));
+    background: linear-gradient(270deg, rgba(49,105,209,0.8), rgba(132, 179, 252, 0.8), rgba(205, 200, 252, 0), rgba(205, 200, 252, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border: none;
+    border: 1px solid #3169d1;
+}
+
+
+.btn12:hover {
+    background-position: 99% 50%;
+    color: #fff !important;
+    border: 1px solid rgba(205, 200, 252, 0);
+}
+
+
+
+.crs5 {
+
+ font-size:17px;
+ color:#333333;
+
+}
+
+
+
+
+.box18{
+    margin:2em 0;
+    position: relative;
+    padding: 1em 1em;
+    border: solid 3px #e95464;
+    border-radius: 3px 0 3px 0;
+    background-color:#ffcccc;
+    color:#ff3366;
+    text-align:center;
+    font-size:20px;
+}
+.box18:before,.box18:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 3px #e95464;
+    border-radius: 50%;
+}
+.box18:after {
+    top:-12px;
+    left:-12px;
+}
+.box18:before {
+    bottom:-12px;
+    right:-12px;
+}
+.box18 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.box15 {
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    color:#ff3366;
+    text-align:center;
+    font-size:17px;
+
+}
+
+
+.box15 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+
+.box25{
+    position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+    text-align:center;
+    font-size:17px;
+
+
+
+
+}
+.box25:after{
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #fff #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.box25 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+.crs6 {
+ text-align:left;
+ font-size:30px;
+ font-weight:bold; 
+ color:#333333;
+}
+
+
+/*カテゴリーアコーディオン*/
+
+.accbox {
+  margin:2em 0;
+  padding:0;
+  max-width:900px;/*最大幅*/
+
+}
+
+
+/*ラベル*/
+.accbox label {
+  display:block;  
+  margin:1.5px 0;
+  padding: 11px 12px;
+  color:#663300;
+  font-weight:bold;
+  background:#f08080;
+  cursor:pointer;
+  transition:all 0.5s;
+
+}
+
+
+/*ラベルホバー時*/
+
+.accbox label:hover {
+
+    background:#ffb6c1;
+
+}
+
+/*チェックは隠す*/
+
+.accbox input {
+
+    display:none;
+
+}
+
+/*中身を非表示にしておく*/
+
+.accbox .accshow {
+
+    height:0;
+    padding:0;
+    overflow:hidden;
+    opacity:0;
+    transition:0.8s;
+
+}
+
+
+/*クリックで中身表示*/
+
+.cssacc:checked + .accshow {
+
+    height:auto;
+    padding:5px;
+    background:#ffe4e1; 
+    opacity:1;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
